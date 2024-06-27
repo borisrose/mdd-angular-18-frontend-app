@@ -1,6 +1,12 @@
-<app-header [header]="appHeader" />
+<app-header></app-header>
 <main class="app__main articles__main">
   <header>
       <app-button [button]="button" (value)="onClick()" />
+      <app-button [button]="sortingButton">
+        <fa-icon [icon]="faSorting"/>
+      </app-button>
   </header>
+  <section>
+      <app-article-card *ngFor="let article of articles" [article]="article" class="article-card"></app-article-card>
+  </section>
 </main>

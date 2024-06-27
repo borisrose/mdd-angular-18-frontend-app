@@ -7,6 +7,7 @@ import { ArticlesComponent } from './pages/articles/articles.component';
 import { ThemesComponent } from './pages/themes/themes.component';
 import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
 import { NewArticleComponent } from './pages/new-article/new-article.component';
+import { SingleArticleComponent } from './pages/single-article/single-article.component';
 
 export const routes: Routes = [
   {
@@ -29,6 +30,10 @@ export const routes: Routes = [
   {
     path: "articles",
     component: ArticlesComponent
+  },
+  {
+    path: "article/:id",
+    component: SingleArticleComponent
   },
   {
     path: "themes",

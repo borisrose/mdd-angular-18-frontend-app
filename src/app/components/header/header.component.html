@@ -1,5 +1,5 @@
-<header [class]="header.className ? 'header '+ header.className : 'app__header'">
-  <ng-container *ngIf="header.className; else defaultContent">
+<header [class]="header && header.className ? 'header '+ header.className : 'app__header'">
+  <ng-container *ngIf="header && header.className; else defaultContent">
     <button (click)="onClickNavBack()">
       <fa-icon class="header__nav-icon" [icon]="faNavBack"></fa-icon>
     </button>

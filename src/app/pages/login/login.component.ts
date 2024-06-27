@@ -18,12 +18,9 @@ export class LoginComponent {
 
   title:TitleInterface = {
     title: "Se connecter",
-    className: "login__title"
+    className: "login__title align-center"
   }
 
-  appHeader:HeaderInterface = {
-    className: "",
-  }
 
   mainHeader:HeaderInterface = {
     className: "login__header"

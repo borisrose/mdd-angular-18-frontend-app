@@ -16,7 +16,7 @@ import { FormComponent } from '../../components/form/form.component';
 export class RegisterComponent {
   title:TitleInterface = {
     title: "S'inscrire",
-    className: "register__title"
+    className: "register__title align-center"
   }
 
 

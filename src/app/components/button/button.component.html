@@ -1,1 +1,3 @@
-<button [class]="button.className ? 'button ' + button.className : 'button'" [type]="button.type" (click)="button.id ? onClick(button.id) : ''">{{button.textContent}}</button>
+<button [class]="button.className ? 'button ' + button.className : 'button'" [type]="button.type" (click)="button.id ? onClick(button.id) : ''">{{button.textContent}}
+  <ng-content></ng-content>
+</button>

@@ -1,6 +1,6 @@
-<article class="article">
+<a class="article" [routerLink]="'/article/'+ article.id">
   <header class="article__header">
-    <span aria-label="article title">{{article.title}}</span>
+    <span aria-label="article title" class="article__title">{{article.title}}</span>
   </header>
   <section class="article__date-and-author">
     <span aria-label="article date">{{article.date}}</span>
@@ -9,4 +9,4 @@
   <section class="article__content">
     <p>{{article.content}}</p>
   </section>
-</article>
+</a>

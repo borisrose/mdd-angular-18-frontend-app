@@ -15,16 +15,14 @@ import { TitleComponent } from '../../components/title/title.component';
 })
 export class NewArticleComponent {
 
-  appHeader:HeaderInterface = {
-    className: ""
-  }
 
   newArticleHeader:HeaderInterface = {
     className: "new-article__header"
   }
 
   newArticleTitle:TitleInterface = {
-    title: "Créer un nouvel article"
+    title: "Créer un nouvel article",
+    className: "new-article__title align-center"
   }
 
   form:FormInterface = {

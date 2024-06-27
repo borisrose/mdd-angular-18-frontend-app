@@ -8,6 +8,14 @@
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+
+  @media (0 <= width <= 414px) {
+
+    margin-block: 10px;
+
+
+  }
+
   &--no-bg {
     background-color: transparent;
     color: #000;
@@ -32,6 +40,12 @@
     margin-block: 5px;
   }
 
+  &--no-border-and-black {
+    color: #000;
+    font-size: small;
+    background-color: transparent;
+    margin-block: 5px;
+  }
 
 }
 

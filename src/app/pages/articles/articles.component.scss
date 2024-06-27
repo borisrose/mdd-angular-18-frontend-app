@@ -1,0 +1,62 @@
+@use "../../../styles.scss";
+
+.articles {
+
+
+
+
+  &__main {
+    flex-direction: column;
+
+    header {
+      height: 10vh;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (0 <= width <= 414px) {
+
+        padding: 10px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+      }
+    }
+
+    & > section {
+      height: 80vh;
+      padding: 30px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      @media (0 <= width <= 414px) {
+        padding: 10px;
+
+      }
+
+
+
+
+      .article-card {
+        width: 48%;
+        height: 45%;
+        margin: 10px;
+        background-color: styles.$secondary-color;
+        @media (0 <= width <= 414px) {
+          width: 95%;
+
+        }
+
+        @media (415px <= width <= 764px) {
+
+          width: 95%;
+
+        }
+      }
+    }
+  }
+}
+
+

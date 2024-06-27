@@ -5,6 +5,11 @@
 
   section {
     width: 50%;
+    @media (0 <= width <= 414px) {
+
+      width: 95%;
+
+    }
 
     align-self: center;
   }
