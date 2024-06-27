@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-inline: 5%;
+  padding-block: 20px;
+
+  width: 100vw;
+  &__nav-icon {
+    font-size: 30px;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+  }
+}

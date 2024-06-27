@@ -1,0 +1,38 @@
+@use "../../../styles.scss";
+
+.button {
+  background-color: styles.$primary-color;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  &--no-bg {
+    background-color: transparent;
+    color: #000;
+    border: solid #000 1px;
+    box-shadow: 0 0 3px #000;
+    transition: all ease-in-out 300ms;
+    margin-block: 10px;
+    &:hover {
+      transform: translateY(2px);
+    }
+
+  }
+
+  &--single {
+    align-self: center;
+  }
+
+  &--no-border-and-red {
+    color: red;
+    font-size: small;
+    background-color: transparent;
+    margin-block: 5px;
+  }
+
+
+}
+
+

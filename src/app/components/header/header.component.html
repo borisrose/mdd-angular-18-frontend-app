@@ -1,0 +1,17 @@
+<header [class]="header.className ? 'header '+ header.className : 'app__header'">
+  <ng-container *ngIf="header.className; else defaultContent">
+    <button (click)="onClickNavBack()">
+      <fa-icon class="header__nav-icon" [icon]="faNavBack"></fa-icon>
+    </button>
+
+  </ng-container>
+
+  <ng-template #defaultContent>
+
+      <figure><img src="/assets/logo_p6.png"></figure>
+      <ng-container *ngIf="isLoggedIn">
+        <app-nav></app-nav>
+      </ng-container>
+
+  </ng-template>
+</header>

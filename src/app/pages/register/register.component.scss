@@ -1,0 +1,12 @@
+.register {
+
+  &__main {
+    flex-direction: column;
+
+
+    section {
+      align-self: center;
+      width: 50%;
+    }
+  }
+}

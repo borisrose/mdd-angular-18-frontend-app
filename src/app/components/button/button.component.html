@@ -1,0 +1,1 @@
+<button [class]="button.className ? 'button ' + button.className : 'button'" [type]="button.type" (click)="button.id ? onClick(button.id) : ''">{{button.textContent}}</button>

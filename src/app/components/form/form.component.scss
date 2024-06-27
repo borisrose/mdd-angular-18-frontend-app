@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__buttons {
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    &--column {
+      flex-direction: column;
+    }
+
+    &--row {
+      flex-direction: row;
+    }
+
+  }
+}

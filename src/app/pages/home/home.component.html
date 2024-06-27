@@ -1,0 +1,8 @@
+<main class="app__main home__main">
+  <figure>
+    <img src="/assets/logo_p6.png" alt="logo de l'application">
+  </figure>
+  <section>
+    <app-button *ngFor="let button of buttons" [button]="button" (value)="onClick($event)"/>
+  </section>
+</main>

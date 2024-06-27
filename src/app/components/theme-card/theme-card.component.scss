@@ -1,0 +1,13 @@
+.theme {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+
+  &__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+}
+

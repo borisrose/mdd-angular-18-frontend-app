@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+  <section class="form__inputs">
+    <ng-template ngFor let-input let-i="index" [ngForOf]="form.inputs">
+      <ng-container *ngIf="!(input.type == 'textarea');else defaultContent">
+        <app-input [input]="input" (value)="onInputChange"/>
+      </ng-container>
+      <ng-template #defaultContent>
+        <app-input [input]="input" (value)="onInputChange"/>
+      </ng-template>
+
+    </ng-template>
+  </section>
+  <section [class]="form.buttonsDirection ? 'form__buttons form__buttons--column' : 'form__buttons form__buttons--row'">
+    <ng-template ngFor let-button let-i="index" [ngForOf]="form.buttons">
+      <app-button [button]="button" (value)="onInputChange"/>
+    </ng-template>
+  </section>
+</form>

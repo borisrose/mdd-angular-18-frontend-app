@@ -1,0 +1,9 @@
+.login {
+  &__main {
+    flex-direction: column;
+    section {
+      width: 50%;
+      align-self: center;
+    }
+  }
+}
